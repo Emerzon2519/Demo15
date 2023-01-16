@@ -1,0 +1,22 @@
+<h1>Interpolación</h1>
+<p>Visualizar atributos del .TS</p>
+<p>Direccion: {{direccion}}</p>
+<h2>Mostrando datos del atributo array</h2>
+<p>Nombre: {{datos.nombre}}</p>
+<p>Nombre: {{datos.apellido}}</p>
+
+
+<h2>Interpolación con expresiones</h2>
+<p>SubTotal: {{1800/ 1.18}}</p>
+<p>SubTotal: {{total/ 1.18}}</p>
+<p>IGV:{{total - (total-1.18)}}</p>
+<p>Total: {{total}}</p>
+
+<h2>Interpolacion ejecutando metodos</h2>
+<p>Resultado: {{Producto(10,15)}}</p>
+
+<h2>Interpolacion por referencia</h2>
+<p #mensaje>Angular Basico I</p>
+<input type="text" value="{{mensaje.innerText}}">
+
+<h2>Interpolacion mediante ? (Visualizacion segura)</h2>
